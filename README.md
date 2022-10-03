@@ -19,9 +19,9 @@ A instalação e provisionamento foi feita no Debian 11 como máquina virtual em
 
 CONFIGURAÇÃO DO DEBIAN 11
 
-# apt-get update
-# apt-get upgrade
-# nano /root/.bashrc  --> Descomentar as linhas:   PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
+#apt-get update
+#apt-get upgrade
+#nano /root/.bashrc  --> Descomentar as linhas:   PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
                                                    export LS_OPTIONS='--color=auto'
                                                    eval "$(dircolors)"
                                                    alias ls='ls $LS_OPTIONS'
