@@ -17,21 +17,26 @@ A instalação e provisionamento foi feita no Debian 11 como máquina virtual em
 - Sem ambiente gráfico e setado apenas a instalação dos pacotes de sistema.
 - Uma partição com o ponto de montagem / 
 
-CONFIGURAÇÃO DO DEBIAN 11
+----CONFIGURAÇÃO DO DEBIAN 11----
 
 #apt-get update
 #apt-get upgrade
-#nano /root/.bashrc  --> Descomentar as linhas:   PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
-                                                   export LS_OPTIONS='--color=auto'
-                                                   eval "$(dircolors)"
-                                                   alias ls='ls $LS_OPTIONS'
-                                                   alias ll='ls $LS_OPTIONS -l'
-                                                   alias l='ls $LS_OPTIONS -lA'
-                                                   # alias rm='rm -i'
-                                                   # alias cp='cp -i'
-                                                   # alias mv='mv -i'
+
+#nano /root/.bashrc
+
+Descomentar as linhas:   
+
+PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
+export LS_OPTIONS='--color=auto'
+eval "$(dircolors)"
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -l'
+alias l='ls $LS_OPTIONS -lA'
+#alias rm='rm -i'
+#alias cp='cp -i'
+#alias mv='mv -i'
                                                    
- Obs: A edição do arquivo oculto .bashrc é útil para melhorar a experiência do usuário com o shell bash, portanto, não é obrigatória para a instalação e provisionamento do Samba 4.
- #
+Obs: A edição do .bashrc é útil para melhorar a experiência do usuário com o shell bash, portanto, não é obrigatória para a instalação e provisionamento do Samba 4.
+
  
                        
