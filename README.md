@@ -26,7 +26,7 @@ A instalação e provisionamento foi feita no Debian 11 como máquina virtual em
 
 Descomentar as linhas:   
 
-PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
+PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ ' 
 export LS_OPTIONS='--color=auto'
 eval "$(dircolors)"
 alias ls='ls $LS_OPTIONS'
